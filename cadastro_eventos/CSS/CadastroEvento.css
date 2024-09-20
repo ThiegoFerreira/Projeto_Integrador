@@ -55,12 +55,12 @@
 }
 .form-box{
     background-color:#f8f5f69c;
-    width: 25%;
+    width: 35%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     padding-left: 5%;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     border-radius: 20px 0 0 20px;
 }
 .modal{
@@ -72,9 +72,10 @@
 }
 .form-box form{
     margin-right:1px;
+    margin-top: 20%;
 }
 .form-box .input-group{
-    margin-bottom: 20px;
+    margin-top:30px;
 }
 .form-box .input-group label{
     color: #3d3d3d;
@@ -100,18 +101,20 @@
 }
 .bottoms-box{
     background-color:#F8F5F69c;
-    width: 75%;
-    padding: 200px 200px;
+    width: 65%;
     border-radius: 0 20px 20px 0;
-    display: flex;  
+    display: flex;
+    padding-left: 5%;
+    padding-right: 7%;
 }
 .bottoms-group{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     justify-content:center;
     padding-right:200px;
-    margin-left: 10px;
+    padding-left: 60px;
+    
 }
 #uploadevento{
     background-color:transparent;
@@ -121,7 +124,8 @@
 #uploadatracao{
     background-color: transparent;
     border: transparent; 
-    cursor: pointer;   
+    cursor: pointer;
+     
 }
 #add{
     background-color: transparent;
@@ -132,8 +136,8 @@
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    margin-left:800px;
-    margin-top: 55px;
+    margin-left:43%;
+    margin-top: 14%;
     cursor: pointer;
 }
 .alterarimagem{
@@ -150,9 +154,9 @@
 .group-botoes{
     border-radius: 5px;
     position: absolute;
-    margin-top:37%;
-    margin-left: 670px;
-    width: 20%;
+    margin-top:36%;
+    margin-left: 40%;
+    width: 28%;
     display: flex;
     justify-content: space-between;
 }
@@ -164,23 +168,19 @@
     border: none;
     color: white;
     cursor: pointer;
-    font-size: 20px;
-    
-    
-    
+    font-size: 24px;
 }
 #cancelar{
     height: 30px;
-    width: 130px;
+    width: 150px;
     background-color: #FF3877;
     border-radius: 10px;
     border: none;
     color: white;
     cursor: pointer;
-    font-size: 20px; 
+    font-size: 24px; 
 }
 h2{
-    z-index: ;
     position: absolute;
     font-size: 34px;
     margin-top: 30px;
