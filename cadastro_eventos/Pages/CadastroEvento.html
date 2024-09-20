@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Cadastro de Evento</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../CSS/CadastroEvento.css">
+    
+</head>
+
+<body class="cadastro-evento">
+    <div class="elementos">
+        <img id="elemento1" src="../Images/Elemento1.FolhaVerde.png" alt="">
+        <img id="elemento2" src="../Images/Elemento2.FolhaVerde.png" alt="">
+        <img id="elemento3" src="../Images/Elemento3.ElipseRosa.png" alt="">
+    </div>
+    <header class="menu">
+        <h1>MENU</h1>
+    </header>
+
+    <div class="box">
+        <h2>CADASTRO DE EVENTOS</h2>
+        <div class="form-box">
+            <form action="#">
+                <div class="input-group">
+                    <label>Nome do evento:</label>
+                    <input type="text" name="nomedoevento" id="nomedoevento" placeholder="Digite o nome do evento"
+                        required>
+                </div>
+                <div class="input-group">
+                    <label>Data do evento:</label>
+                    <div class="modal">
+                        <input type="number" name="datadoevento" id="dia" placeholder="Dia" required>
+                        <input type="number" name="datadoevento" id="mes" placeholder="Mês" required>
+                        <input type="number" name="datadoevento" id="ano" placeholder="Ano" required>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Descrição do evento:</label>
+                    <input type="text" name="descricaodoevento" id="descricaodoevento"
+                        placeholder="Digite uma breve descrição do evento" required>
+                </div>
+                <div class="input-group">
+                    <label>Responsável pelo evento:</label>
+                    <input type="text" name="responsavelpeloevento" id="esponsavelpeloevento"
+                        placeholder="Digite o nome do responsável pelo evento" required>
+                </div>
+                <div class="input-group">
+                    <label>Link externo:</label>
+                    <input type="text" name="link" id="link" placeholder="Digite um link de redirecionamento" required>
+                </div>
+                <div class="input-group">
+                    <label>Descrição da atração:</label>
+                    <input type="text" name="descricaodaatracao" id="descricaodaatracao"
+                        placeholder="Digite uma breve descricao">
+                </div>
+            </form>
+        </div>
+        <div class="bottoms-box">
+            <div class="bottoms-group">
+                <label>Banner do Evento:</label>
+                <button id="uploadevento"><img src="../Images/Upload de imagens.png" alt=""></button>
+                <button class="alterarimagem">ALTERAR IMAGEM</button>
+            </div>
+            <div class="bottoms-group">
+                <label>Banner Atrações:</label>
+                <button id="uploadatracao"><img src="../Images/Upload de imagens.png" alt=""></button>
+                <button class="alterarimagem">ALTERAR IMAGEM</button>
+            </div>
+            <div class="bottoms-group-add">
+                <button id="add"> <img src="../Images/Group 442.png" alt=""></button>
+                <button id="add"> <img src="../Images/Group 442.png" alt=""></button>
+                <button id="add"> <img src="../Images/Group 442.png" alt=""></button>
+            </div>
+        </div>
+        <div class="group-botoes">
+            <button id="salvar">SALVAR</button>
+            <button id="cancelar">CANCELAR</button>
+        </div>
+    </div>
+    
+</body>
+    
+</html>
