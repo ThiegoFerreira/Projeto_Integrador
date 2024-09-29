@@ -7,15 +7,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    /* overflow: hidden; */
 }
-
 .principal {
     width: 100vw;
     height: 90vh;
     z-index: 1;
 }
-
 .principal .box {
     width: 90%;
     height: 90%;
@@ -28,14 +25,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 20px;
-    /* gap: 20px; */
-    /* transition: all 0.8s ease; */
 }
-
-/* .principal .box:hover {
-    backdrop-filter: blur(20px);    
-} */
-
 .bolas-fundo {
     width: 100vw;
     height: 90vh;
@@ -43,14 +33,12 @@
     top: -90vh;
     z-index: -3;
 }
-
 .bolas-fundo .bola-verde1 {
     position: absolute;
     left: -40px;
     top: 6vh;
     z-index: -3;
 }
-
 .bolas-fundo .bola-verde2 {
     position: absolute;
     right: -50px;
@@ -64,45 +52,34 @@
     bottom: -100px;
     z-index: -3;
 }
-
 .box .form-box{
-    /* min-width: 100%; */
     min-height: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: violet;
+    /* background-color: violet; */
     justify-content: space-between;
     width: 100%;
     height: 40%;
 }
-/* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 40%;
-    padding-right: 50px;
-    background-color: blue; */
 .form-box form{
     height: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    background-color: #007E70;
+    /* background-color: #007E70; */
     min-width: 410px;
 }
 .input-group{
     display: flex;
     flex-direction: column;
     height: 70px;
-    margin-top:;
+    padding: 2px;
 }
-
 .form-box .input-group label{
     color: #3d3d3d;
     font-weight: bold;
     display: flex;
-    margin-bottom: 5px;
 }
 .form-box .input-group input{
     width: 100%;
@@ -117,32 +94,36 @@
     transition: all 0.4s ease;
     box-shadow: 1px 2px 0px 0px;
 }
+#dia{
+    width: 120px;
+}
+#mes{
+    width: 120px;
+}
+#ano{
+    width: 120px;
+}
 .form-box .input-group .modal{
-    display: flex;   
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7px;  
+    padding-right: 2px;
 }
 .bottoms-box{
-    width: 65%;
+    width: 50%;
     display: flex;
     align-items: center;
-    /* padding-left: 5%;
-    padding-right: 5%; */
     height: 100%;
-    /* min-width: 300px;
-    min-height: 700px; */
-    background-color: chocolate;
-    
+    /* background-color: chocolate; */
+    justify-content: space-around; 
 }
-
 .bottoms-box .bottoms-group{
     display: flex;
     flex-direction: column;
-    /* width: %; */
-    /* padding-right:200px; */
-    padding-left: 100px;
-    /* background-color: #3d3d3d; */
-    
 }
-
+.bottoms-group #banner{
+    height: 150px;
+}
 #uploadevento{
     background-color:transparent;
     border: transparent;
@@ -152,7 +133,6 @@
     background-color: transparent;
     border: transparent; 
     cursor: pointer;
-     
 }
 #add{
     background-color: transparent;
@@ -176,9 +156,7 @@
     height: 8%;
     padding-right: 50px;
     background-color: blue;
-
 }
-
 .btns .voltar {
     height: 100%;
     padding: 10px;
@@ -186,11 +164,9 @@
     align-items: center;
     justify-content: center;
 }
-
 .voltar .btn-voltar {
     width: 40px;
 }
-
 .btns .btn-cancelar-salvar {
     width: auto;
     height: 100%;
@@ -200,7 +176,6 @@
     gap: 30px;
     padding: 10px;
 }
-
 .btn-cancelar-salvar .btn {
     border: none;
     padding: 10px 20px;
@@ -213,12 +188,10 @@
     justify-content: center;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
 }
-
 .btn-cancelar-salvar .btn-salvar {
     background-color: #007E70;
     box-shadow: 0px 5px 10px 0px rgba(0, 126, 111, 0.50);
 }
-
 .btn-cancelar-salvar .btn a {
     text-decoration: none;
     color: white;
@@ -226,8 +199,6 @@
     font-size: 1.3rem;
     text-transform: uppercase;
 }
-
-
 @media screen and(max-width: 400px) {
     .box .form-box{
         flex-direction: column;
