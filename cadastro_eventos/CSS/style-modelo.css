@@ -64,11 +64,12 @@
 }
 .form-box form{
     height: 100%;
-    width: 50%;
     display: flex;
     flex-direction: column;
     /* background-color: #007E70; */
     min-width: 410px;
+    width: 40%;
+    justify-content: space-evenly;
 }
 .input-group{
     display: flex;
@@ -114,7 +115,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    /* background-color: chocolate; */
+    background-color: chocolate;
     justify-content: space-around; 
 }
 .bottoms-box .bottoms-group{
@@ -123,6 +124,13 @@
 }
 .bottoms-group #banner{
     height: 150px;
+}
+.alterarimagem{
+    width: 100%;
+    background-color: #007E70;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
 }
 #uploadevento{
     background-color:transparent;
@@ -155,7 +163,6 @@
     width: 100%;
     height: 8%;
     padding-right: 50px;
-    background-color: blue;
 }
 .btns .voltar {
     height: 100%;
@@ -199,10 +206,18 @@
     font-size: 1.3rem;
     text-transform: uppercase;
 }
-@media screen and(max-width: 400px) {
+@media only screen and (max-width: 720px) {
     .box .form-box{
         flex-direction: column;
-        background-color: #FF3877;
+        display: flex;
+        align-items: center;
+        /* background-color: violet; */
+        justify-content: space-between;
     }
-    
+    .form-box .input-group input{
+        height: 30px;
+    }
+    .bottoms-box{
+        width: 100%;
+    }
 }
