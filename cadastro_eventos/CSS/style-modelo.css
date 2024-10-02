@@ -69,6 +69,7 @@
     flex-direction: column;
     /* background-color: #007E70; */
     min-width: 360px;
+    justify-content: space-around;
 }
 .input-group{
     display: flex;
@@ -95,19 +96,20 @@
     box-shadow: 1px 2px 0px 0px;
 }
 #dia{
-    width: 120px;
+    width: 100px;
 }
 #mes{
-    width: 120px;
+    width: 100px;
 }
 #ano{
-    width: 120px;
+    width: 100px;
 }
 .form-box .input-group .modal{
     display: flex;
-    justify-content: space-between;
     padding-bottom: 7px;  
     padding-right: 2px;
+    gap: 5px;
+    
 }
 .bottoms-box{
     width: 50%;
@@ -137,8 +139,12 @@
 .add-group{
     display: flex;
     flex-direction: column;
-    padding: 0px;
-    
+}
+.alterarimagem{
+    background-color: #007E70;
+    color: white;
+    border: none;
+    border-radius: 4px;
 }
 #add{
     background-color: transparent;
@@ -153,7 +159,7 @@
     width: 100%;
     height: 8%;
     padding-right: 50px;
-    /* background-color: blue; */
+    
 }
 .btns .voltar {
     height: 100%;
@@ -194,7 +200,7 @@
     text-decoration: none;
     color: white;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 @media only screen and (max-width: 950px) {
@@ -205,42 +211,56 @@
     .add-group{
         display: flex;
         flex-direction: row;
+        scale: 0.8;
     }
 }
-@media only screen and (max-width: 720px) {
-    .form-box .bottoms-box{
+@media only screen and (max-width: 680px) {
+    .principal .box{
+        padding: 0px;
+    }
+    .bottoms-box{
         flex-direction: row;
-        background-color: #FF3877;
-        height: 70%;
+        /* background-color: #FF3877; */
+        height: 60%;
         width: 100%;
         display: flex;
         justify-content: space-between;
     }
-    .bottoms-group{
-        scale: 0.6;
-        background-color: blue;
+    .bottom-box .bottoms-group{
         display: flex;
-
-    
+        flex-direction: column;
+    }
+    .bottoms-group #banner{
+        height: 100px;
+    }
+    .bottoms-group label{
+        font-size: 12px;
+    }
+    .alterarimagem{
+        font-size: 12px;
+        width: 100%;
     }
     .add-group{
         scale: 0.7;
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;   
+        /* background-color: #007E70; */
     }
     .box .form-box{
         flex-direction: column;
         display: flex;
         /* align-items: center; */
-        background-color: violet;
-        justify-content: space-around;
+        /* background-color: violet; */
+        width: 100%;
     }
     .form-box form{
-        background-color: aqua;
+        /* background-color: aqua; */
         flex-direction: column;
         justify-content: space-between;
-        width: 90%;
+        width: 100%;
+        
+        /* min-width: 360px; */
+        scale: 0.85;
     }
     .input-group{
         display: flex;
@@ -255,11 +275,11 @@
         display: flex;
     }
     .form-box .input-group input{
-        width: 100%;
+        width: 360px;
         height: 6px;
         background-color: white;
         border-radius: 10px;
-        
+        padding: 10px;
         border: 2px solid transparent;
         /* padding: 15px; */
         font-size: 15px;
@@ -267,5 +287,29 @@
         transition: all 0.4s ease;
         box-shadow: 1px 2px 0px 0px;
     }
+    h2{
+        font-size: 18px;
+    }
+    .box .btns{
+        display: flex;
+        flex-direction: row;
+        padding-right: 0px;
+        
+    }
+    .btns .btn-cancelar-salvar{
+        display: flex;
+        justify-content: space-between;
+        gap: 10%;
+        
+    }
+    .btn-cancelar-salvar{
+        scale: 0.8;
+    }
+    .btn-cancelar-salvar .btn {
+        border: none;
+        padding: 10px 20px;
+        padding: 0px;
+    }
+    
    
 }
