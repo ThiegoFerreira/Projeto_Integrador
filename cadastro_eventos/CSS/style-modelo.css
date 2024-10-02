@@ -68,7 +68,7 @@
     display: flex;
     flex-direction: column;
     /* background-color: #007E70; */
-    min-width: 410px;
+    min-width: 360px;
 }
 .input-group{
     display: flex;
@@ -134,19 +134,17 @@
     border: transparent; 
     cursor: pointer;
 }
+.add-group{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    
+}
 #add{
     background-color: transparent;
     border: transparent;
 }
-.bottoms-group-add{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    margin-left:43%;
-    margin-top: 14%;
-    cursor: pointer;
-}
+
 .box .btns {
     display: flex;
     flex-direction: row;
@@ -155,7 +153,7 @@
     width: 100%;
     height: 8%;
     padding-right: 50px;
-    background-color: blue;
+    /* background-color: blue; */
 }
 .btns .voltar {
     height: 100%;
@@ -199,10 +197,75 @@
     font-size: 1.3rem;
     text-transform: uppercase;
 }
-@media screen and(max-width: 400px) {
+@media only screen and (max-width: 950px) {
+    .bottoms-box{
+        flex-direction: column;
+        
+    }
+    .add-group{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .form-box .bottoms-box{
+        flex-direction: row;
+        background-color: #FF3877;
+        height: 70%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottoms-group{
+        scale: 0.6;
+        background-color: blue;
+        display: flex;
+
+    
+    }
+    .add-group{
+        scale: 0.7;
+        display: flex;
+        flex-direction: column;
+        
+    }
     .box .form-box{
         flex-direction: column;
-        background-color: #FF3877;
+        display: flex;
+        /* align-items: center; */
+        background-color: violet;
+        justify-content: space-around;
     }
-    
+    .form-box form{
+        background-color: aqua;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        padding: 2px;
+        
+    }
+    .form-box .input-group label{
+        color: #3d3d3d;
+        font-weight: bold;
+        display: flex;
+    }
+    .form-box .input-group input{
+        width: 100%;
+        height: 6px;
+        background-color: white;
+        border-radius: 10px;
+        
+        border: 2px solid transparent;
+        /* padding: 15px; */
+        font-size: 15px;
+        color: #616161;
+        transition: all 0.4s ease;
+        box-shadow: 1px 2px 0px 0px;
+    }
+   
 }
