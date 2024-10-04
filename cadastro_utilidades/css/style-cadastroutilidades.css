@@ -137,10 +137,6 @@ h2{
     background-color: transparent;
     border: transparent;
 }
-img{
-    background-color: transparent;
-    border: transparent;
-}
 .form-box .box-img{
     display: flex;
     flex-direction: row;
