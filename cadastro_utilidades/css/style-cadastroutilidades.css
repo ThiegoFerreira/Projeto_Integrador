@@ -127,21 +127,19 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: burlywood;
-    /* width: 20%; */
+    width: 18%;
     background-color: transparent;
-    border: transparent;
+    border: none;    
 }
-.uploadimg #upload img{
-    height: 70%;
-    background-color: transparent;
+.uploadimg .upload{
     border: transparent;
+    background-color: transparent;
+    cursor: pointer;
 }
 .form-box .box-img{
     display: flex;
     flex-direction: row;
     justify-content:end;
-    background-color: aqua;
     height: 70%;   
 }
     
